@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Notes Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <div>
+                <h1>📝 Smart Notes</h1>
+                <p>Organize your thoughts and ideas</p>
+            </div>
+            <span class="date" id="currentDate"></span>
+        </header>
+
+        <!-- Search Section -->
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search your notes..."
+            >
+        </div>
+
+        <!-- Add Note Section -->
+        <section class="note-form">
+            <h2>Create a New Note</h2>
+
+            <input
+                type="text"
+                id="noteTitle"
+                placeholder="Enter note title"
+            >
+
+            <textarea
+                id="noteContent"
+                placeholder="Write your note here..."
+                rows="5"
+            ></textarea>
+
+            <button id="addNoteBtn">+ Add Note</button>
+        </section>
+
+        <!-- Notes Section -->
+        <section class="notes-section">
+            <div class="section-heading">
+                <h2>My Notes</h2>
+                <span id="noteCount">0 Notes</span>
+            </div>
+
+            <div id="notesContainer" class="notes-container">
+                <!-- Notes will appear here -->
+            </div>
+
+            <p id="emptyMessage" class="empty-message">
+                No notes found. Create your first note!
+            </p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2026 Smart Notes Manager | CSE326 Project</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
